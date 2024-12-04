@@ -10,11 +10,11 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Task {
-    Long id;
-    String title;
-    String details;
-    LocalDateTime createdAt;
-    LocalDateTime updatedAt;
-    TaskStatus status;
-    boolean isDeleted;
+    private Long id;
+    private String title;
+    private String details;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
+    private TaskStatus status;
+    private boolean isDeleted;
 }
