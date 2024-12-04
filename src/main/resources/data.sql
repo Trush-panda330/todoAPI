@@ -1,4 +1,3 @@
--- 初期データ挿入: todo テーブル
 INSERT INTO todo (title, details, created_at, due_date, updated_at, status, is_deleted)
 VALUES
     ('タスク1', 'タスク1の詳細内容', NOW(), '2024-12-10 12:00:00', NOW(), 'ACTIVE', 0),
@@ -7,8 +6,6 @@ VALUES
     ('タスク4', 'タスク4の詳細内容', NOW(), '2024-12-15 16:00:00', NOW(), 'ACTIVE', 0),
     ('タスク5', 'タスク5の詳細内容', NOW(), '2024-12-20 09:00:00', NOW(), 'ACTIVE', 0);
 
--- 初期データ挿入: task_status_history テーブル
--- 注意: task_id は todo テーブルの id に基づいて挿入
 INSERT INTO todo_status_history (todo_id, status, is_deleted, changed_at)
 VALUES
     (1, 'ACTIVE', 0, '2024-12-01 10:00:00'),
